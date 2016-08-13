@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "740AC3E91999799900AB9A86"
+               BlueprintIdentifier = "C4D770E31C2BF2C800B15C64"
                BuildableName = "Toucan.framework"
-               BlueprintName = "Toucan"
+               BlueprintName = "Toucan.tvOS"
                ReferencedContainer = "container:Toucan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,32 +29,17 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "740AC3F41999799900AB9A86"
-               BuildableName = "ToucanTests.xctest"
-               BlueprintName = "ToucanTests"
-               ReferencedContainer = "container:Toucan.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "740AC3E91999799900AB9A86"
+            BlueprintIdentifier = "C4D770E31C2BF2C800B15C64"
             BuildableName = "Toucan.framework"
-            BlueprintName = "Toucan"
+            BlueprintName = "Toucan.tvOS"
             ReferencedContainer = "container:Toucan.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
@@ -70,9 +55,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "740AC3E91999799900AB9A86"
+            BlueprintIdentifier = "C4D770E31C2BF2C800B15C64"
             BuildableName = "Toucan.framework"
-            BlueprintName = "Toucan"
+            BlueprintName = "Toucan.tvOS"
             ReferencedContainer = "container:Toucan.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -88,9 +73,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "740AC3E91999799900AB9A86"
+            BlueprintIdentifier = "C4D770E31C2BF2C800B15C64"
             BuildableName = "Toucan.framework"
-            BlueprintName = "Toucan"
+            BlueprintName = "Toucan.tvOS"
             ReferencedContainer = "container:Toucan.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

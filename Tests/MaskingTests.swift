@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Gavin Bunney, Bunney Apps (http://bunney.net.au)
+// Copyright (c) 2014-2016 Gavin Bunney, Simple Labs (http://thesimplelab.co)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -32,5 +32,18 @@ class MaskingTests : ToucanTestCase {
         
         let centerRGBA = getPixelRGBA(masked, point: CGPoint(x: masked.size.width / 2, y: masked.size.height / 2))
         XCTAssertEqual(centerRGBA.alpha, 255.0 as CGFloat, "Check center is not transparent")
+    }
+    
+    func testMaskWithPath() {
+        let path = UIBezierPath()
+        path.moveToPoint(CGPointMake(0, 50))
+        path.addLineToPoint(CGPointMake(50, 0))
+        path.addLineToPoint(CGPointMake(100, 50))
+        path.addLineToPoint(CGPointMake(50, 100))
+        path.closePath()
+        let masked2 = Toucan(image: landscapeImage).resize(CGSizeMake(300, 250), fitMode: Toucan.Resize.FitMode.Scale).maskWithPath(path: path).image
+        
+        let cornerRGBA = getPixelRGBA(masked2, point: CGPoint(x: 0, y: 0))
+        XCTAssertEqual(cornerRGBA.alpha, 0.0 as CGFloat, "Check corner is transparent")
     }
 }

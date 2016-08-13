@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Toucan'
-  s.version = '0.2.0'
+  s.version = '0.5.0'
   s.license = 'MIT'
   s.summary = 'Fabulous Image Processing in Swift'
   s.homepage = 'https://github.com/gavinbunney/Toucan'
@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/gavinbunney/Toucan.git', :tag => s.version }
 
   s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Source/*.swift'
 

@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Gavin Bunney, Bunney Apps (http://bunney.net.au)
+// Copyright (c) 2014-2016 Gavin Bunney, Simple Labs (http://thesimplelab.co)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -38,7 +38,7 @@ class ToucanTestCase : XCTestCase {
     }
 
     internal func getPixelRGBA(image: UIImage, point: CGPoint) -> (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
-        var pixelData : CFDataRef = CGDataProviderCopyData(CGImageGetDataProvider(image.CGImage))
+        let pixelData : CFDataRef = CGDataProviderCopyData(CGImageGetDataProvider(image.CGImage))!
         let data  = CFDataGetBytePtr(pixelData)
         
         let pixelInfo = Int(((image.size.width * point.y) + point.x ) * 4)
